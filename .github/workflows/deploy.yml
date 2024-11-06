@@ -26,7 +26,7 @@ jobs:
 
       # Step 4: Build CSS with Tailwind CLI
       - name: Build Tailwind CSS
-        run: tailwindcss -i ./public/input.css -o ./public/style.css --minify
+        run: tailwindcss -i ./src/input.css -o ./public/style.css --minify
 
       # Step 5: Move files from public to the root for GitHub Pages
       - name: Deploy to GitHub Pages
